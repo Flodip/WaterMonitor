@@ -5,12 +5,11 @@ Tested on Raspberry Pi 3 Model B Plus Rev 1.3
 # Table of contents
 
 * [Requirements](#requirements) 
-* [Python evironment](#python%20environment)
+* [Python environment](#python-environment)
 * [Database](#database)
-* [Peak detection](#peak%20detection)
-* [License](#License)
+* [Peak detection](#peak-detection)
 
-# Requirements
+## Requirements
 
   - Raspbian
   - sudo apt install python3-venv libpq-dev python3-dev libjpeg-dev
@@ -18,7 +17,7 @@ Tested on Raspberry Pi 3 Model B Plus Rev 1.3
 It is highly recommended to calibrate the compass which is extremely sensitive.
 https://www.raspberrypi.org/documentation/hardware/sense-hat/
 
-# Python environment
+## Python environment
 
 Virtualenv is used to handle dependencies that are stored in the requirements.txt file.
 
@@ -28,7 +27,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Database
+## Database
 
 The data from the water consumption is stored in a database, Postgresql is used here.
 
@@ -52,7 +51,7 @@ CREATE TABLE water_consumption (timestamp bigint, value float);
 CREATE INDEX index_timestamp ON water_consumption (timestamp);
 ```
 
-### Peak detection
+## Peak detection
 
 The peak detection code allows to detect peaks from a signal sample, ignoring noises thanks to a set delimiter.
 
