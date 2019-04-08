@@ -4,6 +4,10 @@
 
 Tested on Raspberry Pi 3 Model B Plus Rev 1.3
 
+# Table of contents
+
+[Database](#database)
+
 # Requirements
 
   - Raspbian
