@@ -1,12 +1,14 @@
 # Water monitoring system
 
-
-
 Tested on Raspberry Pi 3 Model B Plus Rev 1.3
 
 # Table of contents
 
-[Database](#database)
+* [Requirements](#requirements) 
+* [Python evironment](#python%20environment)
+* [Database](#database)
+* [Peak detection](#peak%20detection)
+* [License](#License)
 
 # Requirements
 
