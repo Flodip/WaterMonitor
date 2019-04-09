@@ -8,6 +8,7 @@ Tested on Raspberry Pi 3 Model B Plus Rev 1.3
 * [Python environment](#python-environment)
 * [Database](#database)
 * [Peak detection](#peak-detection)
+* [Launch](#launch)
 
 ## Requirements
 
@@ -56,6 +57,25 @@ CREATE INDEX index_timestamp ON water_consumption (timestamp);
 The peak detection code allows to detect peaks from a signal sample, ignoring noises thanks to a set delimiter.
 
 > Inspired by https://gist.github.com/endolith/250860
+
+## Launch
+
+To start the program, you must beforehand activate the python environment, then launch the pimonitor
+
+```ssh
+source venv/bin/activate
+python3 pimonitor.py
+```
+
+The use of the screen application is recommended. When connecting in ssh to the raspberry and starting the application, exiting the ssh window will lose the focus on the program running. Thanks to the screen application, you can return to the state of the running application.
+
+```ssh
+screen python pimonitor.py
+```
+
+To detached the focus: ctrl+a then ctrl+d
+To reattach the focus: screen -r
+
 
 License
 ----
