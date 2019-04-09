@@ -74,6 +74,7 @@ screen python pimonitor.py
 ```
 
 To detached the focus: ctrl+a then ctrl+d
+
 To reattach the focus: screen -r
 
 
