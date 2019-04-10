@@ -70,7 +70,7 @@ python3 pimonitor.py
 The use of the screen application is recommended. When connecting in ssh to the raspberry and starting the application, exiting the ssh window will lose the focus on the program running. Thanks to the screen application, you can return to the state of the running application.
 
 ```ssh
-screen python pimonitor.py
+screen python3 pimonitor.py
 ```
 
 To detached the focus: ctrl+a then ctrl+d
