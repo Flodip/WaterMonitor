@@ -2,6 +2,11 @@
 
 Tested on Raspberry Pi 3 Model B Plus Rev 1.3
 
+For now, SignalProcessing.py only works on files downloaded from database.
+
+TODO: 
+- create bash that runs SignaProcessing and transform part of raw database into "smart" database each x hour.
+
 # Table of contents
 
 * [Requirements](#requirements) 
