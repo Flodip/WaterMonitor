@@ -3,3 +3,4 @@ psycopg2
 numpy
 rtimulib
 sense-hat
+matplotlib
